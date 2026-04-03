@@ -17,6 +17,13 @@ Lステップ・Xステップ・ManyChat、全部不要。無料・セルフホ�
 | [LINE Harness](https://github.com/Shudesu/line-harness-oss) | Lステップ / Utage | `Shudesu/line-harness-oss` | Live |
 | [X Harness](https://github.com/Shudesu/x-harness-oss) | Xステップ | `Shudesu/x-harness-oss` | Live |
 | [IG Harness](https://github.com/Shudesu/instagram-harness-oss) | ManyChat / iステップ | `Shudesu/instagram-harness-oss` | Live |
+| [Note Harness](https://github.com/Shudesu/note-harness-oss) | note.com (有料記事) | `Shudesu/note-harness-oss` | Live |
+
+## Ecosystem / エコシステム
+
+| Component | Description | Repo |
+|-----------|-------------|------|
+| [Marketplace](https://github.com/Shudesu/harness-marketplace-oss) | Plugin, template, and partner marketplace / プラグイン・テンプレ・パートナーマーケットプレイス | `Shudesu/harness-marketplace-oss` |
 
 > More channels coming — WhatsApp, Telegram, and beyond.
 >
@@ -30,10 +37,9 @@ Lステップ・Xステップ・ManyChat、全部不要。無料・セルフホ�
 ┌─────────────────────────────────────────────┐
 │              The Harness                     │
 │                                              │
-│  ┌───────────┐ ┌──────────┐ ┌────────────┐  │
-│  │   LINE    │ │    X     │ │     IG     │  │
-│  │  Harness  │ │  Harness │ │   Harness  │  │
-│  └─────┬─────┘ └────┬─────┘ └─────┬──────┘  │
+│  ┌──────┐ ┌────┐ ┌────┐ ┌──────┐             │
+│  │ LINE │ │ X  │ │ IG │ │ Note │             │
+│  └──┬───┘ └──┬─┘ └──┬─┘ └──┬───┘             │
 │        │             │             │          │
 │        └─────────────┼─────────────┘          │
 │                      │                        │
@@ -48,7 +54,6 @@ Lステップ・Xステップ・ManyChat、全部不要。無料・セルフホ�
 │                      │                        │
 │              ┌───────┴────────┐               │
 │              │  Marketplace   │               │
-│              │  (Coming Soon) │               │
 │              └────────────────┘               │
 └─────────────────────────────────────────────┘
 
@@ -101,15 +106,16 @@ npx create-instagram-harness
 
 ---
 
-## Marketplace (Coming Soon)
+## Marketplace
 
-The Harness Marketplace — where builders meet businesses.
+[Harness Marketplace](https://github.com/Shudesu/harness-marketplace-oss) — where builders meet businesses.
 
-Harnessマーケットプレイス — 作る人と使いたい人が出会う場所。
+[Harnessマーケットプレイス](https://github.com/Shudesu/harness-marketplace-oss) — 作る人と使いたい人が出会う場所。
 
 - **Templates** — Industry-specific automation packs / 業種別自動化パック
 - **Plugins** — Community-built extensions / コミュニティ製プラグイン
 - **Partners** — Certified implementation experts / 認定導入パートナー
+- **15% commission** via Stripe Connect / Stripe Connect経由の15%手数料
 
 > Interested in becoming a partner? Watch this repo.
 >
@@ -122,8 +128,9 @@ Harnessマーケットプレイス — 作る人と使いたい人が出会う�
 - [x] LINE Harness — Live
 - [x] X Harness — Live
 - [x] IG Harness — Live
+- [x] Note Harness — Live (Stripe payments + compound gates)
+- [x] Harness Marketplace — Live
 - [ ] Unified contact identity (cross-channel)
-- [ ] The Harness Marketplace
 - [ ] WhatsApp Harness
 - [ ] Telegram Harness
 - [ ] Unified dashboard
